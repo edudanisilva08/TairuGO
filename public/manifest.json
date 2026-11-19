@@ -1,0 +1,17 @@
+{
+  "short_name": "TairúGo",
+  "name": "TairúGo — Guia Turístico e Comercial de Peruíbe",
+  "description": "Explore praias, cachoeiras da Juréia, trilhas, mirantes e o comércio local de Peruíbe/SP mesmo em conexões móveis oscilantes.",
+  "icons": [
+    {
+      "src": "/assets/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#060E1E",
+  "theme_color": "#00C2FF",
+  "display": "standalone",
+  "orientation": "portrait-primary"
+}

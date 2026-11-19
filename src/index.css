@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ocultar barra de rolagem horizontal mantendo scroll touch suave */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Barra de rolagem customizada escura para listas internas (Próximo de você / Gaveta) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(11, 23, 42, 0.6);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 194, 255, 0.35);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 194, 255, 0.7);
+}
+
+/* Remove fundo branco padrão dos ícones customizados */
+.tairugo-custom-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-container {
+  background-color: #060e1e !important;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Filtro Noturno Oceânico aplicado diretamente nas camadas oficiais do Google Maps */
+.google-night-tiles .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(195deg) brightness(88%) contrast(105%) saturate(110%);
+}
